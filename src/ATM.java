@@ -1,7 +1,7 @@
 public class ATM {
     private int atmMoney;
 
-    public ATM(int atmMoney, int clientMoney) {
+    public ATM(int atmMoney) {
         this.atmMoney = atmMoney;
     }
 
