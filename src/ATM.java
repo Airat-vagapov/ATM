@@ -19,6 +19,7 @@ public class ATM {
             System.out.println("Error text");
             return atmMoney;
         }
+
         atmMoney = atmMoney - clientMoney;
         return atmMoney;
     }
