@@ -1,33 +1,26 @@
 public class ATM {
     private int atmMoney;
-    private int clientMoney;
 
     public ATM(int atmMoney, int clientMoney) {
         this.atmMoney = atmMoney;
-        this.clientMoney = clientMoney;
     }
 
     public int getAtmMoney() {
         return atmMoney;
     }
 
-    public int getClientMoney() {
-        return clientMoney;
-    }
-
-    public int takeMoney() {
+    public int takeMoney(int clientMoney) {
         atmMoney = atmMoney + clientMoney;
         return atmMoney;
     }
 
-    public int getMoney() {
+    public int getMoney(int clientMoney) {
         if (atmMoney < clientMoney) {
+            System.out.println("Error text");
             return atmMoney;
         }
         atmMoney = atmMoney - clientMoney;
-        return clientMoney;
-
+        return atmMoney;
     }
-
 
 }
