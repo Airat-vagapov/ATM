@@ -16,7 +16,6 @@ public class ATM {
 
     public int getMoney(int clientMoney) {
         if (atmMoney < clientMoney) {
-            System.out.println("Error text");
             return atmMoney;
         }
 
